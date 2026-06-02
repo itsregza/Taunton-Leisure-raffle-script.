@@ -158,7 +158,6 @@ def run_entry(email, cap_key, proxies):
 
     token = None
     for n in range(60):
-        time.sleep(2)
         resp = requests.post(
             "https://api.capsolver.com/getTaskResult",
             json={"clientKey": cap_key, "taskId": cap_id},
